@@ -1,0 +1,239 @@
+/*Elément que l'on retrouve sur les 4 pages du menu*/
+/*Page d'accueil OMF*/
+
+@mixin body{
+	margin:0;
+	padding:0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 50px;
+
+
+
+}
+
+
+@mixin header{
+
+	width: 100%;
+	background-color:$vert;
+	color:$couleur-jaune;
+	text-align: center;
+	height: 50px;
+	padding:20px;
+
+
+}
+
+/*dégradé violet*/
+
+@mixin degrade-vlt{
+
+			background: linear-gradient(#e66465, #9198e5);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+			
+		}
+
+/*dégradé blue*/
+@mixin degrade-blue{
+
+			background: linear-gradient( #0047b3, #005ce6,#0066ff, #4d94ff, #80b3ff);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+			
+		}
+
+/*dégradé vert*/
+
+@mixin degrade-green{
+
+			background: linear-gradient( #134d00,#269900,  #2db300, #66ff33, #9fff80,  #d9ffcc);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+
+			
+
+			}
+
+/*dégradé orangé*/
+
+@mixin degrade-orange{
+
+		    background: linear-gradient(90turn, #F04A5E,#EC1111,#FF4500,#FF6347,#FF7F50,#FF8C00,#FFA500);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+}
+
+
+
+/* disposition des éléments du footer*/
+@mixin footer{
+		
+			display:flex;
+			justify-content: space-around;
+			font-size: 20px;
+ 			
+ 			position:fixed;
+ 			bottom:0;
+			width: 100%;
+			height: 35px;
+			padding-top:0;
+		
+ 	
+
+}
+
+@mixin legales{
+
+
+
+	a{
+
+ 	 	color:$couleur-jaune;
+ 	 	width:150px;
+ 	 	height:auto;
+ 	 
+
+
+	}
+
+	a:hover{
+		text-decoration: none;
+		animation:shake 0.6s infinite;
+	}
+
+	.mail{
+
+		color:$couleur-jaune;
+		width:150px;
+ 	 	height:auto;
+	}
+
+	.mail{
+    
+    	font-family:arial;
+    
+		}
+
+	.mail:hover{
+    
+    animation:shake 0.6s infinite;
+   
+   }
+@keyframes shake{
+
+    0% {
+        transform: translate(0px,0px) rotate(0deg);
+    }
+
+
+    25% {
+        transform: translate(1px,1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translate(2px,-1px)rotate(2deg);
+    }
+
+     100%{
+        transform:translate(-1px,1px)rotate(-1deg);
+    }
+}
+
+
+
+
+}
+
+ 
+
+
+/* Page menu note enchantée*/
+
+/*sm-containers des plats et prix*/
+
+@mixin sm-container{
+		text-align: center;
+	
+
+}
+
+@mixin plats{
+
+	margin:10px;
+	font-size:20px;
+
+}
+
+@mixin prix{
+
+	margin:10px;
+	font-size:20px;
+	padding-bottom: 20px;
+
+}
+
+
+/* taille correspond au titre de séparation*/
+
+@mixin title-first{
+
+	font-size: 30px;
+    font-weight: bold;
+}
+
+/*propriété de la carte unique contenu le menu*/
+
+
+@mixin carte{
+	width: 700px;
+	height: auto;
+	margin:2em;
+	padding: 2em;
+	background-color:#FCDFD8;
+	box-shadow: 5px 5px 1em lightgrey;
+
+	
+}
+
+@mixin separation{
+
+	display:flex;
+	flex-wrap:nowrap;
+	margin-top:70px;
+	margin-bottom: 35px;
+	width: 100%;
+	height: auto;
+
+
+}
+
+@mixin trait{
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	width: 100%;
+	height: auto;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+

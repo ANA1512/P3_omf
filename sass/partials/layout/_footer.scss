@@ -1,0 +1,15 @@
+footer{
+
+	@include header;
+	@include footer;
+	font-family: $police-roboto;
+
+}
+
+.legales
+{
+	@include footer;
+	@include legales;
+	
+
+}

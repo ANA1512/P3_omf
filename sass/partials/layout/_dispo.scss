@@ -1,0 +1,111 @@
+
+/* 1- PAGE ACCUEIL*/
+/* 2- LA NOTE ENCHANTEE*/
+/* 3- LE CHIC A LA FRANCAISE*/
+/* 4- LE DELICE DES PAPILLES*/
+/* 5- LA PALETTE DU GOUT*/
+
+
+
+/* 1- PAGE ACCUEIL*/
+
+/*MAIN*/
+.card
+{
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: auto;
+	margin:2em;
+	padding: 3em;
+
+}
+
+/*Dispo titre dans les 4 cartes*/
+.card__title--org,.card__title--blue,.card__title--green{
+
+	display:flex;
+	justify-content: center;
+}
+
+/* Dispositions des mentions legales et contact dans footer*/
+.légales
+{
+	display:flex;
+	justify-content: space-around;
+}
+
+
+
+/* Titre en haut des cartes sur chaque menu*/
+.title{
+
+	font-size: 20px;
+	width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+h2{
+	text-align:center;
+}
+
+h1{
+	text-align:center;	
+}
+
+/* Ces sm-containers correspondent à la disposition des plats et des prix*/
+
+/* Elément graphique*/
+.separation{
+	
+	@include separation;	
+}
+
+/* Conteneur des div plats et prix*/
+.sm-container{
+	@include sm-container;	
+}
+
+.sm-container-1{
+	display:block;
+	margin:30px;
+	line-height: 25px;
+	padding-bottom:50px;
+
+}
+
+/* plats et prix*/
+
+.plats{
+	@include plats;
+}
+
+.prix{
+	@include prix;
+}
+
+
+
+/* 3- LE CHIC A LA FRANCAISE==========================*/
+
+.carte-cf{
+
+	text-align:center;
+}
+
+
+/* disposition du plats et du prix sur la même ligne*/
+
+.sm-container-mr, .sm-container-vlt,.plats-blue {
+
+	@include sm-container;
+	padding-bottom: 20px;
+	
+
+}
+
+
+
+
+

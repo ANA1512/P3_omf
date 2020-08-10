@@ -1,0 +1,181 @@
+
+/* 1- PAGE ACCUEIL*/
+/* 2- LA NOTE ENCHANTEE*/
+/* 3- LE CHIC A LA FRANCAISE*/
+/* 4- LE DELICE DES PAPILLES*/
+/* 5- LA PALETTE DU GOUT*/
+
+
+/* Elements généraux==================*/
+
+/* Header - footer- bouton*/
+
+header, footer,.bouton
+{
+
+	background-color:$vert;
+	color:$couleur-jaune;
+
+}
+
+/* 1- PAGE ACCUEIL*/
+/* Partie MAIN========================*/
+
+.card--pink{
+	background-color:#ffccb3;
+	
+}
+
+.card--violet{
+	background-color:#ffe6ff;
+}
+
+.card--lightgrey{
+	background-color: #e6e6e6;
+}
+
+.card--white{
+	background-color:white;
+}
+
+/* ---------------------------------------- */
+/* ==            POLICE -accueil              */
+/*---------------------------------------- */
+
+
+/* la note enchantée===========================*/ 
+
+.card__musique>h2{
+	color:black;
+}
+
+/*le chic à la française==========================*/
+/* Menu titre orange*/
+
+.card__title--org>h2{
+	color: #ff884d;
+	margin:0px;
+}
+
+/*le délice des papilles=========================*/
+/* Menu titre blue*/
+
+.card__title--blue>h2{
+	color:#0066ff;
+	margin:0px;
+}
+
+/*la palette du goût=============================*/
+/* Menu titre vert*/
+.card__title--green>h2{
+	color:#8cff66;
+	margin:0px;
+}
+
+/* ---------------------------------------- */
+/* ==     BACKGROUND-COLOR -menu          */
+/*---------------------------------------- */
+
+
+/*2-la note enchantée======================*/
+/* carte-page-menu*/
+.carte-ne
+{
+	
+	@include carte;
+	background-color: #FCDFD8;
+	
+}
+
+/*logo*/
+
+.logo-1, .logo-2{
+
+	@include degrade-orange;
+}
+
+
+/* 3- LE CHIC A LA FRANCAISE==================*/
+
+/* carte-page menu*/
+
+.carte-cf
+{
+	
+	@include carte;
+	background-color:#FFF5FE;
+}
+
+
+/* titre principal page menu et page accueil*/ 
+
+.bg-title-cf, .card--vlt>h2
+{
+
+	@include degrade-vlt;
+
+}
+
+/* premiere partie du menu marron*/
+
+ .title-first-cf, .sm-container-mr{
+
+	color: #C77412;
+}
+
+/* deuxième partie du menu violet*/
+
+.vlt, .plats--vlt,.title-second-cf,.prix-vlt{
+
+	color:#A56799;
+}
+
+/* troisième partie bleu*/
+
+.sm-container-cf, .title-third-cf{
+	color:#6E4CCC;
+}
+
+
+
+/* 4- LE DELICE DES PAPILLES======================*/
+
+/* carte page-menu*/
+.carte-dp
+{
+	
+	@include carte;
+	background-color:#EDEFEF;
+	
+}
+
+
+/* titre principal de la carte page menu et page accueil*/ 
+
+.bg-title-dp, .card--blue>h2{
+
+	@include degrade-blue;
+
+}
+
+/* 5- LA PALETTE DU GOUT=========================*/
+
+/* carte page-menu */
+
+.carte-pg{
+
+	@include carte;
+	background-color: #FDFFFD;
+
+}
+
+
+/* titre principal*/ 
+
+ .bg-title-pg, .card--green>h2 {
+
+	@include degrade-green;
+
+}
+
+
