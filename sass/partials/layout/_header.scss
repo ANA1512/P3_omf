@@ -5,14 +5,18 @@ header{
     font-family: 'Archivo Black', sans-serif;
 
 	h1{
- 		font-size: 50px;
+		display:flex;
+		justify-content:center; 
+		align-self: center;
+		text-decoration: none;
+		color:$couleur-jaune;
  		font-family: 'Archivo Black', sans-serif;
 
 	}
 
 
-h1,h2{
-	text-align: center;
+h2{
+	justify-content: center;
 }
    
 	
@@ -25,3 +29,5 @@ h2{
 	font-weight: bold;
 
 }
+
+

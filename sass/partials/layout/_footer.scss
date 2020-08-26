@@ -13,3 +13,18 @@ footer{
 	
 
 }
+
+
+/*Page Mentions légales*/ 
+
+.ml{
+
+    @include carte;
+    background-color: #BDBDBD;
+    color:white;
+    font-weight: bold;
+    justify-content: center;
+    font-family: arial;
+
+}
+

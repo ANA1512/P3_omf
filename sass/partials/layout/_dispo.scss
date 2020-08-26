@@ -35,23 +35,11 @@
 	justify-content: space-around;
 }
 
+/*titre de séparation*/
 
-
-/* Titre en haut des cartes sur chaque menu*/
 .title{
 
-	font-size: 20px;
-	width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-h2{
-	text-align:center;
-}
-
-h1{
-	text-align:center;	
+	@include title;
 }
 
 /* Ces sm-containers correspondent à la disposition des plats et des prix*/
@@ -63,7 +51,7 @@ h1{
 }
 
 /* Conteneur des div plats et prix*/
-.sm-container{
+.sm-container, .sm-container-1-ne{
 	@include sm-container;	
 }
 
@@ -106,6 +94,28 @@ h1{
 }
 
 
+/*le chic a la française*/
 
+.test{
+    position:relative;
+	bottom: 30px;
+	width: 100%;
+	
 
+}
+
+.trait-1{
+
+	position:relative;
+	top: 30px;
+	width: 50%;
+	
+}
+
+.trait-2{
+	position:relative;
+	width:50%;
+	left: 150px;
+	bottom:10px;
+} 
 

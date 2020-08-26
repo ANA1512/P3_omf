@@ -1,5 +1,5 @@
-/*Elément que l'on retrouve sur les 4 pages du menu*/
-/*Page d'accueil OMF*/
+/**/
+
 
 @mixin body{
 	margin:0;
@@ -16,14 +16,13 @@
 
 
 @mixin header{
-
+	display:flex;
+	justify-content: center;
 	width: 100%;
 	background-color:$vert;
 	color:$couleur-jaune;
-	text-align: center;
 	height: 50px;
 	padding:20px;
-
 
 }
 
@@ -74,8 +73,7 @@
 		
 			display:flex;
 			justify-content: space-around;
-			font-size: 20px;
- 			
+			font-size: 18px;
  			position:fixed;
  			bottom:0;
 			width: 100%;
@@ -95,6 +93,8 @@
  	 	color:$couleur-jaune;
  	 	width:150px;
  	 	height:auto;
+ 	 	margin-top: 20px;
+ 	 	font-weight: bold;
  	 
 
 
@@ -123,6 +123,8 @@
     animation:shake 0.6s infinite;
    
    }
+
+/*Effet wiggle*/
 @keyframes shake{
 
     0% {
@@ -195,7 +197,7 @@
 @mixin carte{
 	width: 700px;
 	height: auto;
-	margin:2em;
+	margin:1em;
 	padding: 2em;
 	background-color:#FCDFD8;
 	box-shadow: 5px 5px 1em lightgrey;
@@ -226,7 +228,22 @@
 }  
 
 
+/* Titre en haut des cartes sur chaque menu*/
+@mixin title{
 
+	font-size: 20px;
+	width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+h2{
+	text-align:center;
+}
+
+h1{
+	text-align:center;	
+}
 
 
 
