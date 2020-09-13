@@ -31,7 +31,6 @@ img{
 
 
 
-/* LE CHIC A LA FRANCAISE*/
 
 /* le soulignement des titres de séparation avec :hover*/
 
@@ -65,12 +64,13 @@ img{
 
 }
 
-
-
 .underline-mr:hover{
 	background-size: 100% 100%;
 
 }
+
+
+/*2e et 3e partie*/
 .underline-vlt{
 	position:relative;
 	display:inline-block;
@@ -86,7 +86,7 @@ img{
 	left:0;
 	bottom:0;
 	width:0;
-	height:2px;
+	height: 0.5px;
 	line-height: 20px;
 	background-color:#A56799;
 	transition: width 0.5s ease-in-out;
@@ -104,9 +104,7 @@ img{
 	background-size: 0 100%;
 	transition:background-size .3s;
 
-
 }
-
 
 .underline-blue:hover{
 	background-size: 100% 100%;
